@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: black;
+  color: white;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  min-height: 100vh;
+  background: black;
+}
+
+/* Hide decorative elements */
+.background-collage,
+.background-overlay,
+.brand-header,
+.image-label,
+.site-footer,
+.ban-icon,
+.ban-footer {
+  display: none;
+}
+
+/* Ban List */
+.ban-panel {
+  align-self: center;
+  min-height: 75vh;
+  padding: 25px 15px;
+  color: black;
+  background: #d3d3d3;
+}
+
+.ban-heading {
+  text-align: center;
+}
+
+.ban-heading h2 {
+  font-size: 22px;
+}
+
+.ban-description,
+.ban-empty,
+.ban-chip {
+  font-size: 12px;
+}
+
+.ban-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.ban-chip {
+  padding: 10px;
+  background: #eee;
+  border: 0;
+}
+
+/* Main Discovery Panel */
+.discovery-panel {
+  margin: 40px 20px;
+  padding: 35px 20px;
+  text-align: center;
+  background: #292929;
+  border: 1px solid #383838;
+  border-radius: 4px;
+}
+
+.hero-copy h1 {
+  font-size: clamp(32px, 4vw, 48px);
+}
+
+.hero-description {
+  color: #ddd;
+  font-size: 14px;
+}
+
+.dog-card {
+  max-width: 420px;
+  margin: 20px auto;
+}
+
+.dog-image-wrap {
+  height: 250px;
+}
+
+.dog-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dog-information h2 {
+  font-size: 26px;
+}
+
+.dog-subtitle,
+.attribute-hint,
+.discover-footnote {
+  color: #ccc;
+  font-size: 12px;
+}
+
+.attributes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.attribute {
+  padding: 8px 10px;
+  background: #d3d3d3;
+  border: 0;
+  border-radius: 2px;
+}
+
+.attribute-label {
+  display: none;
+}
+
+.attribute-banned {
+  background: #666;
+  color: white;
+}
+
+.discover-button {
+  padding: 11px 22px;
+  color: white;
+  background: #111;
+  border: 0;
+  border-radius: 10px;
+}
+
+.discover-button:hover {
+  background: #444;
+}
+
+.discover-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.loading-state,
+.error-message {
+  padding: 15px;
+}
+
+/* Mobile Layout */
+@media (max-width: 700px) {
+  .app-shell {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .discovery-panel {
+    order: 1;
+    margin: 0;
+    padding: 25px 15px;
+  }
+
+  .ban-panel {
+    order: 2;
+    min-height: auto;
+    align-self: stretch;
+  }
+
+  .dog-image-wrap {
+    height: 220px;
+  }
+}
+
+

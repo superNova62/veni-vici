@@ -1,0 +1,10 @@
+- API button
+- characteristics (dog) (should be buttons)
+    - breed
+    - color
+    - age
+    - origin
+    - name
+    - image
+- ban list
+    - dog characteristics (buttons)
